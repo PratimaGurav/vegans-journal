@@ -1,33 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+:root {
+
+    /*---------- TYPOGRAPHY ----------*/
+  
+    --header-text: 'Oswald', sans-serif;
+    --content-text: 'Lato', sans-serif;
+  
+  
+    /*---------- COLOURS ----------*/
+  
+    --base-color: #00884E;
+    --grad1-color: #6c9b7c;
+    --secondary-color: #EAFEF0;
+    --accent-color: #F25C05;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+}
+
+
 
 body {
-    background-color: #00884e;
-    font-family: 'Caveat', cursive;
+    background-color: var(--secondary-color);
+    font-family: var(--content-text);
     
 }
 
-.brand {
-    font-family: 'Arima Madurai', sans-serif;
-    font-size: 1.4rem;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-text);
+    color: var(--black-color);
+ }
+
+
+
+
+/*---------- HEADER ----------*/
+.navbar {
+    font-size: 14px;
+    font-family: var(--header-text);
     font-weight: 700;
-    color: #4A4A4F;
-}
+    letter-spacing: 0.2rem;
+    background: var(--base-color) !important;
+    padding: 20px 20px;
+    z-index:999;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-family: var(--header-text);
+  }
+  
+  .nav-link {
+    font-size: 20px;
+    font-family: var(--content-text);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--black-color);
+    padding-left: 20px;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--white-color);
+  }
+
 
 
 .thin {
     font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
 }
 
 .card {
@@ -48,7 +88,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: var(--white-color);
     margin: 4px;
     text-transform: uppercase;
 }
@@ -63,8 +103,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: var(--base-color);
+    color: var(--white-color);
     position: relative;
 }
 
@@ -80,7 +120,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: var(--base-color);
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -89,12 +129,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: var(--base-color);
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: var(--accent-color);
 }
 
 .post-title {
@@ -104,17 +144,17 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: var(--grad1-color);
 }
 
 .btn-signup {
     background-color: #23BBBB;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
+    background-color: var(--white-color);
     color: #23BBBB;
 }
 
@@ -125,19 +165,19 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: var(--base-color);
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: var(--accent-color);
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: var(--accent-color);
     background: transparent;
     border: none;
 }

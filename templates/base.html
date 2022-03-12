@@ -18,11 +18,11 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+<body class="d-flex flex-column h-100">
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Vegan's Journal</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -59,25 +59,25 @@
         </div>
     </nav>
 
-    <main class="flex-shrink-0 main-bg">
+    <main class="flex-shrink-0">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer mt-auto py-3">
         <!-- Copyright -->
         <p class="m-0 text-center">&copy; Vegan's Journal 2022</p>
         <p class="m-0 text-center">Follow us: 
             <a href="https://www.facebook.com/" aria-label="Visit our Facebook page" rel="noopener" target="_blank"><i
-                class="fab fa-facebook-square fa-2x"><span class="visually-hidden">Facebook</span></i></a>
+                class="fab fa-facebook-square ms-3"><span class="visually-hidden">Facebook</span></i></a>
             <a href="https://www.twitter.com/" aria-label="Visit our Twitter page" rel="noopener" target="_blank"><i
-                    class="fab fa-twitter-square fa-2x"><span class="visually-hidden">Twitter</span></i></a>
+                    class="fab fa-twitter-square ms-3"><span class="visually-hidden">Twitter</span></i></a>
             <a href="https://www.instagram.com/" aria-label="Visit our Instagram page" rel="noopener" target="_blank"><i
-                    class="fab fa-instagram fa-2x"><span class="visually-hidden">Instagram</span></i></a>
+                    class="fab fa-instagram ms-3"><span class="visually-hidden">Instagram</span></i></a>
             <a href="https://www.youtube.com/" aria-label="Visit our YouTube page" rel="noopener" target="_blank"><i
-                    class="fab fa-youtube fa-2x"><span class="visually-hidden">Youtube</span></i></a>
+                    class="fab fa-youtube ms-3"><span class="visually-hidden">Youtube</span></i></a>
         </p>
     </footer>
 </body>
