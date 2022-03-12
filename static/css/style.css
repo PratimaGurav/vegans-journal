@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-    border: none;
+    border: none 2px;
     background-color: var(--base-color);
 }
 
@@ -152,18 +152,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: var(--accent-color);
     color: var(--white-color);
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: var(--white-color);
-    color: #23BBBB;
+    color: var(--accent-color);
 }
 
 .link {
-    color: #23BBBB;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
