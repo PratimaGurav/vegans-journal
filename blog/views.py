@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import (ListView, DetailView, CreateView)
-from .models import Post
-from .forms import CommentForm, AddPostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Post, Comment
+from .forms import AddPostForm
+from .forms import CommentForm, AddPostForm
 
 
 class PostList(ListView):
@@ -67,6 +68,9 @@ class PostDetail(DetailView):
 
 
 class AddPostView(LoginRequiredMixin, CreateView):
+    """
+    View for adding a blog post.
+    """
     model = Post
     form_class = AddPostForm
     template_name = 'add_blog_post.html'
