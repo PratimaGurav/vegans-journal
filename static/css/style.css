@@ -11,8 +11,8 @@
   
     /*---------- COLOURS ----------*/
   
-    --base-color: #286518;
-    --grad1-color: #A8BE98;
+    --base-color: #8CB567;
+    --grad1-color: #3E6934;
     --secondary-color: #EFF0F2;
     --accent-color: #E28C1B;
     --white-color: #FFFFFF;
@@ -91,6 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 4px;
     text-transform: uppercase;
 }
+
+.card-text {
+    color: var(--grad1-color)!important;
+}
+
 
 .masthead {
     margin-top: 10px;
