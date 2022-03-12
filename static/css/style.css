@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Caveat&display=swap');
+
 body {
-    background-color: #F9FAFC;
+    background-color: #00884e;
+    font-family: 'Caveat', cursive;
+    
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Arima Madurai', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
 
 .thin {
     font-weight: 300;
