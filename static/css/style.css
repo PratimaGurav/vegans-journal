@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Raleway:ital,wght@1,500&display=swap');
 
 :root {
 
     /*---------- TYPOGRAPHY ----------*/
   
-    --header-text: 'Oswald', sans-serif;
-    --content-text: 'Lato', sans-serif;
+    --header-text: 'Montserrat', sans-serif;
+    --content-text: 'Raleway', sans-serif;
   
   
     /*---------- COLOURS ----------*/
@@ -13,7 +14,7 @@
     --base-color: #286518;
     --grad1-color: #A8BE98;
     --secondary-color: #EFF0F2;
-    --accent-color: #F25C05;
+    --accent-color: #E28C1B;
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -30,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-text);
     color: var(--black-color);
  }
-
 
 
 
@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
     color: var(--white-color);
   }
-
 
 
 .thin {
