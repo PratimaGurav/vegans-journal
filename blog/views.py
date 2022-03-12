@@ -1,17 +1,18 @@
 from django.shortcuts import render, get_object_or_404
-from django.views import generic, View
+from django.views.generic import (ListView, DetailView, CreateView)
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, AddPostForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
 
 
-class PostDetail(View):
+class PostDetail(DetailView):
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -63,3 +64,13 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+
+class AddPostView(LoginRequiredMixin, CreateView):
+    model = Post
+    form_class = AddPostForm
+    template_name = 'add_blog_post.html'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
