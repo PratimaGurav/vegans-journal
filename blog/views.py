@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import (ListView, DetailView, CreateView)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse
+from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import AddPostForm
 from .forms import CommentForm, AddPostForm
@@ -79,3 +80,16 @@ class AddPostView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class PostLike(View):
+    
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+        
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))        
