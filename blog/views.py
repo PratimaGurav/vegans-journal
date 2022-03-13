@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import (ListView, DetailView, CreateView)
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse
 from .models import Post, Comment
 from .forms import AddPostForm
 from .forms import CommentForm, AddPostForm

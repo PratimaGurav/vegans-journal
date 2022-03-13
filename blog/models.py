@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.urls import reverse
 
 
 STATUS = ((0, "Draft"), (1, "Publish"))
@@ -20,11 +21,30 @@ class Post(models.Model):
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
 
+    def get_absolute_url(self):
+        kwargs = {
+            'slug': self.slug
+        }
+        return reverse('post_detail', kwargs=kwargs)    
+
     class Meta:
         ordering = ["-created_on"]
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        self.slug = self.title.replace(' ', '-')
+        super().save(*args, **kwargs)
+
+
+    def get_absolute_url(self):
+        """
+        This fixes an error which the button on add blog post
+        is not taking user back as expected.
+        """
+        return reverse('home')
+
 
     def number_of_likes(self):
         return self.likes.count()
@@ -43,3 +63,5 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+        
