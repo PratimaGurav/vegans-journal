@@ -34,7 +34,6 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['vegansjournal.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
