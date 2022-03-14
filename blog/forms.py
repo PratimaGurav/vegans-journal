@@ -1,11 +1,19 @@
-from .models import Comment, Post
+from .models import Comment, Post, Category
 from django import forms
+
+choices = Category.objects.all().values_list('name', 'name')
+
+choice_list = []
+
+for item in choices:
+    choice_list.append(item)
 
 
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
 
 class AddPostForm(forms.ModelForm):
     class Meta:
@@ -14,9 +22,10 @@ class AddPostForm(forms.ModelForm):
         Populate fields when creating a post.
         """
         model = Post
-        fields = ('title', 'content', 'featured_image', 'status')
+        fields = ('title', 'category', 'content', 'featured_image', 'status')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control','placeholder':'Choose a blog title!'}),
+            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }

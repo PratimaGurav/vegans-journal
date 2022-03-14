@@ -3,7 +3,7 @@ from django.views.generic import (ListView, DetailView, CreateView,  UpdateView,
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
+from .models import Post, Comment, Category
 from .forms import AddPostForm
 from .forms import CommentForm, AddPostForm, EditPostForm
 
@@ -90,7 +90,17 @@ class AddPostView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
-    
+
+
+class AddCategoryView(LoginRequiredMixin, CreateView):
+    """
+    View for adding a category.
+    """
+    model = Category
+    template_name = 'add_category.html'
+    fields = '__all__'
+
+
 class EditPostView(UpdateView):
     """
     View that displays form to edit posts.
