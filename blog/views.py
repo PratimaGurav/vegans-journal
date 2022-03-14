@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import (ListView, DetailView, CreateView)
+from django.views.generic import (ListView, DetailView, CreateView,  UpdateView, DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse
+from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import AddPostForm
-from .forms import CommentForm, AddPostForm
+from .forms import CommentForm, AddPostForm, EditPostForm
 
 
 class PostList(ListView):
@@ -91,4 +91,19 @@ class AddPostView(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
     
-       
+class EditPostView(UpdateView):
+    """
+    View that displays form to edit posts.
+    """
+    model = Post
+    form_class = EditPostForm
+    template_name = 'edit_blog_post.html'
+
+
+class DeletePostView(DeleteView):
+    """
+    View that displays delete for deleting posts.
+    """
+    model = Post
+    template_name = 'delete_blog_post.html'
+    success_url = reverse_lazy('home')

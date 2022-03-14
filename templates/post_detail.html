@@ -9,7 +9,25 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}
+                <small>
+                        {% if user.is_authenticated %}
+                        {% if user.id == post.author.id %}
+                    <!-- buttons for edit/delete checks if user made the post -->
+                       <a class="btn btn-success" href="{% url 'edit_post' post.slug  %}">Edit
+                       </a>
+                       <a class="btn btn-danger" href="{% url 'delete_post' post.slug  %}">Delete
+                       </a>
+                       <a class="btn btn-primary" href="{% url 'home' %}" id="btn-back">Home!
+                       </a>
+                       {% else %}
+                       <a class="btn btn-primary" href="{% url 'home' %}" id="btn-back">Home!
+                       </a>
+                       <hr>
+                       {% endif %}
+                       {% endif %}
+                   </small>
+                </p>  
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
