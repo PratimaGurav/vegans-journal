@@ -22,7 +22,7 @@
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }} | 
-                                        Category: <a href="{% url 'category' post.category %}">{{ post.category }}</a>
+                                        Category: <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
                                     </p>
                                 </div>
                             </div>

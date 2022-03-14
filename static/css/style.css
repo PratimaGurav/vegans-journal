@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .author {
     color: var(--white-color);
     margin: 4px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .card-text {
