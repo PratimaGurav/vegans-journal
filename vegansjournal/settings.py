@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'ckeditor',
     'crispy_forms',
     'allauth',
     'allauth.account',

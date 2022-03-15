@@ -8,6 +8,7 @@
 <div class="mb-3">
   <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
+    {{ form.media }}
     {{ form.as_p}}
     {{ body | safe }}
     <button class="btn btn-secondary">Submit Post
