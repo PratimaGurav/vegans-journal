@@ -33,7 +33,7 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     content = RichTextField(blank=True, null=True)
-    # content = models.TextField()
+    blog_snippet = models.CharField(max_length=200)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(

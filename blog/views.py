@@ -70,15 +70,10 @@ class PostDetail(DetailView):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
+                "draft": draft,
             },
         )
-
-        def get_context_data(self, *args, **kwargs):
-            cat_menu = Category.objects.all()
-            context = super(PostDetail, self).get_context_data(*args, **kwargs)
-            context["cat_menu"] = cat_menu
-            return context
 
 def like_view(request, slug):
         post = get_object_or_404(Post, slug=slug)

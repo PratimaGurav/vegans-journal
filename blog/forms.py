@@ -22,7 +22,7 @@ class AddPostForm(forms.ModelForm):
         Populate fields when creating a post.
         """
         model = Post
-        fields = ('title', 'category', 'content', 'featured_image', 'status')
+        fields = ('title', 'category', 'content', 'featured_image', 'status', 'blog_snippet')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control','placeholder':'Choose a blog title!'}),
             'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
