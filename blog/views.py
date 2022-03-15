@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import (ListView, DetailView, CreateView,  UpdateView, DeleteView)
+from django.views.generic import (ListView, DetailView, CreateView,  
+                                  UpdateView, DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
@@ -116,6 +117,20 @@ def CategoryView(request, cats):
 def CategoryListView(request):
     cat_menu_list = Category.objects.all()
     return render(request, 'category_list.html', {'cat_menu_list':cat_menu_list})
+
+
+def results_view(request):
+    """
+    View rendering search bar functionality.
+    """
+    if request.method == 'POST':
+        searched = request.POST.get('searched')
+        posts = Post.objects.filter(title__icontains=searched)
+        return render(request, 'search_blog.html',
+                      {'searched': searched, 'posts': posts})
+    else:
+        return render(request, 'search_blog.html', {})
+
 
 
 class EditPostView(UpdateView):

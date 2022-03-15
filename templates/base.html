@@ -76,7 +76,7 @@
                     {% endif %}
                 </ul>
                 <!-- Search bar -->
-                <form class="d-flex" method="POST" action="#">
+                <form class="d-flex" method="POST" action="{% url 'search_blog' %}">
                     {% csrf_token %}
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                         name="searched">
