@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: var(--accent-color);
 }
 
 .author {
