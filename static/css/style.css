@@ -12,7 +12,7 @@
     /*---------- COLOURS ----------*/
   
     --base-color: #8CB567;
-    --grad1-color: #3E6934;
+    --grad1-color: #08823F;
     --secondary-color: #EFF0F2;
     --accent-color: #E28C1B;
     --white-color: #FFFFFF;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-text {
-    color: var(--grad1-color)!important;
+    color: var(--black-color)!important;
 }
 
 
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-subtitle {
     margin-left: 5%;
-    color: var(--grad1-color);
+    color: var(--black-color);
 }
 
 .btn-signup {
@@ -192,13 +192,13 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     margin-top: auto;  
     width:100%;
-    color: var(--white-color);
+    color: var(--black-color);
     background: var(--base-color) !important;
 }
   
   #footer-external-links> a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--grad1-color);
 }
   
   #footer-external-links> a:hover {
