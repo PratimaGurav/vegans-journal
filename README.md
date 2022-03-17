@@ -2,7 +2,7 @@
 
 ## Code Institute: Portfolio Project 4
 
-### Full-Stack Toolkit site based on business logic.
+### Full-Stack Toolkit site.
 
 ![Responsive]
 
@@ -29,6 +29,8 @@
 ## User Experience (UX)
 
 ### Introduction
+
+Vegan's Journal is a full-stack application using mainly the Django full-stack web framework. 
 
      
 ### Audience
