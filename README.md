@@ -86,10 +86,10 @@ I have used GitHub’s Kanban feature to handle the user stories.
   - [Python+Django](https://en.wikipedia.org/wiki/Django_(web_framework))
   - [PostgresSQL](https://en.wikipedia.org/wiki/PostgreSQL)
   - [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
-  - [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-  - [GitHub](https://github.com/) was used to store the projects code after being pushed from Git.   
-  - [Lucidchart](https://www.lucidchart.com/) was used to create the flowchart during the inital phase.
-  - [Heroku](https://heroku.com/) application was used to deploy the project.
+  - [Git](https://git-scm.com/)
+  - [GitHub](https://github.com/)   
+  - [Lucidchart](https://www.lucidchart.com/) 
+  - [Heroku](https://heroku.com/) 
     
     
 ## Testing
