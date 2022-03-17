@@ -37,10 +37,11 @@ Vegan's Journal is a full-stack application using mainly the Django full-stack w
 The site is targetted to people who wants to know about Vegan and / or trying to be vegan.    
 
 ### User stories
+I have used GitHub’s Kanban feature to handle the user stories. 
 
   #### Site User
    1. I want to view a list of posts so that I can select one to read.
-   2. I want to click on a post so that I can read the full article / text.
+   2. I want to search a blog post(using relevant word) and ability to click on a post to read the full article / text.
    3. I want to view the number of likes on each post so that I can see which is the most popular or viral.
    4. I want to view comments on an individual post so that I can read the conversation.
    5. I want to register an account so that I can comment and like.
@@ -60,7 +61,11 @@ The site is targetted to people who wants to know about Vegan and / or trying to
     
 ### Design
 
-  - 
+  - #### Color Scheme
+    The main colours used for the site are Dollar Bill Green(#8CB567), La Salle Green (#08823F), Seashell (#EFF0F2), Golden Bell (#E28C1B), white (#FFFFFF) and black (#000000). These colours complement eachother and maintain good contrast levels.
+
+  - #### Typography
+    Raleway italic font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat italic is used for headings with Sans Serif as the fallback.  
    
     
 ## Features
@@ -73,14 +78,14 @@ The site is targetted to people who wants to know about Vegan and / or trying to
 
 ## Technologies Used
 
-### Languages Used
+### Languages, Frameworks, Libraries & Programs Used
 
-  -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-  -   [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
-
-
-### Frameworks, Libraries & Programs Used
-
+  - [HTML](https://en.wikipedia.org/wiki/HTML)
+  - [CSS](https://en.wikipedia.org/wiki/CSS)
+  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - [Python+Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+  - [PostgresSQL](https://en.wikipedia.org/wiki/PostgreSQL)
+  - [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
   - [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
   - [GitHub](https://github.com/) was used to store the projects code after being pushed from Git.   
   - [Lucidchart](https://www.lucidchart.com/) was used to create the flowchart during the inital phase.
