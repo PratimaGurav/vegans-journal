@@ -95,7 +95,7 @@ class AddPostView(LoginRequiredMixin, CreateView):
     form_class = AddPostForm
     template_name = 'add_blog_post.html'
 
-    def form_valid(self, slug, form):
+    def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
