@@ -22,11 +22,11 @@ class AddPostForm(forms.ModelForm):
         Populate fields when creating a post.
         """
         model = Post
-        fields = ('title', 'category', 'content', 'featured_image', 'status', 'blog_snippet')
+        fields = ('title', 'category', 'slug', 'content', 'featured_image', 'status', 'blog_snippet')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control','placeholder':'Choose a blog title!'}),
             'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control'}),
+            'content': forms.Textarea(attrs={'class': 'form-control'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
 
@@ -41,9 +41,10 @@ class EditPostForm(forms.ModelForm):
         populate fields when editing fields in a post.
         """
         model = Post
-        fields = ('title', 'content', 'featured_image', 'status')
+        fields = ('title', 'category', 'slug', 'content', 'featured_image', 'status', 'blog_snippet')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control'}),
+            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
+            'content': forms.Textarea(attrs={'class': 'form-control'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
