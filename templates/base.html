@@ -61,21 +61,22 @@
                       {% endif %}
 
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Add
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="nav-item">
-                                 <a class="nav-link" href="{% url 'add_post' %}">Post</a>
+                                 <a class="dropdown-item" href="{% url 'add_post' %}">Post</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'add_category' %}">Category</a>
+                                <a class="dropdown-item" href="{% url 'add_category' %}">Category</a>
                             </li>
-                        </ul>    
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                    </li>            
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
