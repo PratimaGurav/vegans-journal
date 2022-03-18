@@ -4,10 +4,10 @@
 {% if user.is_authenticated %}
 {% if user.id == post.author.id %}
 <br/>
-<h1>Update your Post!
+<h1 class="text-center">Update your Post!
 </h1>
 <br/>
-<div class="mb-3">
+<div class="mx-auto" style="width: fit-content">
   <form method="POST">
     {% csrf_token %}
     {{ form.media }}
