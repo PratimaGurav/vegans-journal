@@ -59,13 +59,13 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" , class="btn btn-dark btn-sm">Upvote
-                                </button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                                    <i class="fas fa-heart"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" , class="btn btn-danger btn-sm">Downvote
-                                </button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                                    <i class="far fa-heart"></i></button>
 
                                 {% endif %}
 

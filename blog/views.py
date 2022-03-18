@@ -72,7 +72,6 @@ class PostDetail(DetailView):
                 "commented": True,
                 "comment_form": comment_form,
                 "liked": liked,
-                "draft": draft,
             },
         )
 

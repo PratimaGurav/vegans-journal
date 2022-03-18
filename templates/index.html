@@ -4,6 +4,7 @@
 
 <div class="container-fluid">
     <div class="row">
+        <!--Page title-->
         <h2 class= "h2 text-center">Welcome to Vegan's Journal!</h2>
 
         <!-- Blog Entries Column -->
@@ -32,7 +33,8 @@
                             <p class="card-text">{{ post.blog_snippet | safe}}
                             </p>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                                {{ post.number_of_likes }}</p>
                         </div>
                     </div>
                 </div>
