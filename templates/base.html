@@ -48,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %} active {% endif %}"  aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <!--Code for Category Menu-->
                     {% if cat_menu %}
@@ -58,7 +58,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             {% for item in cat_menu %}
-                            <li><a class="dropdown-item" href="{% url 'category' item|slugify %}">
+                            <li><a class="dropdown-item {% if request.resolver_match.url_name == 'category' %} active {% endif %}" href="{% url 'category' item|slugify %}">
                              {{ item }}</a></li>
                             {% endfor %}
                         </ul>
@@ -66,7 +66,7 @@
                       {% else %}
                       
                       <li class="nav-item">
-                        <a class="nav-link" href="{% url 'category_list' %}">Categories</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'category_list' %} active {% endif %}" href="{% url 'category_list' %}">Categories</a>
                       </li>
 
                       {% endif %}
@@ -85,15 +85,15 @@
                             </li>
                         </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                            <a class="nav-link {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
                         </li>
                     </li>            
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'account_login' %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
