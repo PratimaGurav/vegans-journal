@@ -4,14 +4,23 @@
 <html lang="en" class="h-100">
 
 <head>
+     <!-- Page title -->
     <title>VegansJournal Blog</title>
 
+        <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Welcome to Vegan's Journal! This site is your hub for vegan community to share, explore and desgin your life around vegan values.">
+    <meta name="keywords"
+        content="Vegan, vegan's, journal, blog, plant-based, healthy, the vegan, recipes, food, travel">
+    
+     <!--Favicon, static css and bootstrap -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.ico' %}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
@@ -26,6 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
+                <!--Site logo-->
                 <img class="rounded float-start"
                 src="https://res.cloudinary.com/dnt4yopv8/image/upload/v1647452499/logo_2_vdavwm.jpg"
                 alt="Site Logo VJ">
@@ -89,7 +99,7 @@
                 <!-- Search bar -->
                 <form class="d-flex" method="POST" action="{% url 'search_blog' %}">
                     {% csrf_token %}
-                    <input class="form-control me-2" type="search" placeholder="Search Blog" aria-label="Search"
+                    <input class="form-control me-2" type="search" placeholder="Search or jump to..." aria-label="Search"
                         name="searched">
                     <button class="btn btn-success" type="submit">Search
                     </button>
