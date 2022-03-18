@@ -62,7 +62,7 @@
                              {{ item }}</a></li>
                             {% endfor %}
                         </ul>
-                      </li>
+                    </li>
                       {% else %}
                       
                       <li class="nav-item">
@@ -86,8 +86,7 @@
                         </ul>
                         <li class="nav-item">
                             <a class="nav-link {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
-                        </li>
-                    </li>            
+                        </li>           
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
