@@ -80,16 +80,21 @@ I have used GitHub’s Kanban feature to handle the user stories.
 
 ### Languages, Frameworks, Libraries & Programs Used
 
-  - [HTML](https://en.wikipedia.org/wiki/HTML)
-  - [CSS](https://en.wikipedia.org/wiki/CSS)
-  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - [HTML](https://en.wikipedia.org/wiki/HTML)was used to structure the site.
+  - [CSS](https://en.wikipedia.org/wiki/CSS)was used to design the site. 
+  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)was used to display messages to the user.
   - [Python+Django](https://en.wikipedia.org/wiki/Django_(web_framework))
-  - [PostgresSQL](https://en.wikipedia.org/wiki/PostgreSQL)
+  - [PostgresSQL](https://en.wikipedia.org/wiki/PostgreSQL)was used as relational database. 
   - [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
-  - [Git](https://git-scm.com/)
-  - [GitHub](https://github.com/)   
-  - [Lucidchart](https://www.lucidchart.com/) 
-  - [Heroku](https://heroku.com/) 
+  - [Google Fonts:](https://fonts.google.com/)were used to import the font into the style.css file which is used on all pages throughout the project.
+  - [Font Awesome:](https://fontawesome.com/)was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+  - [Git:](https://git-scm.com/)was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+  - [GitHub:](https://github.com/)was used to store the projects code after being pushed from Git.   
+  - [Balsamiq:](https://balsamiq.com/)was used to create the wireframes during the design process. 
+  - [Color Adobe:](https://color.adobe.com/)was used to select different colours used on the website. 
+  - [Cloudinary](https://cloudinary.com/home-3722)was used to store images. 
+  - [Heroku](https://heroku.com/)was used for deployment and hosting environment. 
+  - [Favicon](https://favicon.io/)was used to create favicon.
     
     
 ## Testing
