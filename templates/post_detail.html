@@ -72,15 +72,15 @@
                             </form>
                             {% else %}
 
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-heart"></i></span>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }}</span>
+                            <span> {{ post.number_of_likes }}</span>
                         </strong>
                    
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <strong><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
                             {{ total_comments }}</strong>
                         {% endwith %}
@@ -103,11 +103,11 @@
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                        {{ comment.name }}
-                        <span class=" text-muted font-weight-normal">
+                       <strong> {{ comment.name }} </strong>
+                        <span class="font-weight-normal">
                             <!-- The comment's created date goes here -->
-                            {{ comment.created_on }}
-                        </span> wrote:
+                         commented on: {{ comment.created_on }}
+                        </span>
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
