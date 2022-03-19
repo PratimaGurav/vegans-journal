@@ -15,6 +15,7 @@
     --grad1-color: #08823F;
     --secondary-color: #EFF0F2;
     --accent-color: #E28C1B;
+    --heart-color: #EB4C42;
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -178,14 +179,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-like {
-    color: var(--accent-color);
+    color: var(--heart-color);
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: var(--accent-color);
+    color: var(--heart-color);
     background: transparent;
     border: none;
 }
