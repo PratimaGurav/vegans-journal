@@ -11,7 +11,7 @@
         {{ post.title | title }} 
       </a>
     </strong> :
-    <p>{{ post.author.username | title }} |{{ post.created_on }}
+    <p>Author: {{ post.author.username | title }} | {{ post.created_on }}
     </p>
   </li>
   {% endfor %}

@@ -9,7 +9,7 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}
+                <p class="post-subtitle">Author: {{ post.author }} | {{ post.created_on }}
                     <small>
                             {% if user.is_authenticated %}
                             {% if user.id == post.author.id %}
