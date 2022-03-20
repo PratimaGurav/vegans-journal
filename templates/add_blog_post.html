@@ -8,7 +8,8 @@
 <div class="mx-auto" style="width: fit-content">
   <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p}}
+    {{ form.media }}
+    {{ form.as_p }}
     {{ body | safe }}
     <button class="btn btn-success">Submit Post
     </button>
