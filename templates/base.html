@@ -84,9 +84,6 @@
                                 <a class="dropdown-item" href="{% url 'add_category' %}">Category</a>
                             </li>
                         </ul>
-                        <li class="nav-item">
-                            <a class="nav-link {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
-                        </li> 
                     </li>                            
                     {% else %}
                     <li class="nav-item">
