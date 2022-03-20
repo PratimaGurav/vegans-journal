@@ -5,9 +5,11 @@
 </h1>
 {% for item in cat_menu_list %}
 <ul class="list-group-item list-group-item-dark m-4">
-    <h4>
-        <a class="dropdown-item" href="{% url 'category' item|slugify %}">{{ item }}</a> 
-    </h4>
+    <li>
+        <h4>
+            <a class="dropdown-item" href="{% url 'category' item|slugify %}">{{ item }}</a> 
+        </h4>
+    </li>    
 </ul>
 {% endfor %}
 {% endblock %}

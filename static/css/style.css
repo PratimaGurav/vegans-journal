@@ -97,6 +97,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--black-color)!important;
 }
 
+.m-4 {
+    list-style-type: none;
+}
 
 .dropdown-item:hover {
     background-color: var(--base-color)!important;
