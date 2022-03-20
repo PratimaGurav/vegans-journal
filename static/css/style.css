@@ -143,7 +143,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-link:hover,
 .page-link {
-    color: var(--accent-color);
+    color: var(--white-color);
+    background-color: var(--grad1-color);
 }
 
 .post-title {
