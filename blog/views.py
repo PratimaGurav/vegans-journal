@@ -109,7 +109,7 @@ class AddCategoryView(LoginRequiredMixin, CreateView):
 
 
 def CategoryView(request, cats):
-    category_posts = Post.objects.filter(category=cats.title().replace('-', ' '))
+    category_posts = Post.objects.filter(status=1, category=cats.title().replace('-', ' '))
     return render(request, 'categories.html', {'cats':cats.title().replace('-', ' '), 'category_posts':category_posts})
 
 
