@@ -86,7 +86,8 @@
                         </ul>
                         <li class="nav-item">
                             <a class="nav-link {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
-                        </li>                         
+                        </li> 
+                    </li>                            
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
@@ -98,9 +99,14 @@
                 </ul>
                 {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> 
-                       <a class="nav-link" href="#">{{ user.username|title }}
-                       </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ user.username|title }}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 {% endif %}
