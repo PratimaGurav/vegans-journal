@@ -92,9 +92,9 @@ I have used GitHub’s Kanban feature to handle the user stories.
   ![Add dropdown screenshot](documentation/readme/add_dropdown.jpg)
   9. Comments.
   ![Comments screenshot](documentation/readme/comments.jpg)
-  10. Up/downvote.
+  10. Upvote.
   ![Upvote screenshot](documentation/readme/upvote.jpg)
-  
+      Downvote
   ![Downvote screenshot](documentation/readme/downvote.jpg)
   11. Register page.
   ![Register screenshot](documentation/readme/register.jpg)
@@ -117,9 +117,12 @@ All Pages on the website have:
     ![Footer](documentation/readme/footer.jpg)
 
 
-
 ### Future Enhancements 
-  - 
+  - Add function to create a user profile and edit / update profile setting with an option to add first_name, last_name, last_logged_in.
+  - Implement a function to bookmark a page.
+  - Add more messages for users that is while logging out, adding posts.
+  - Add subscribe page for users to receive weekly updates.
+  - Function to view most popular blog posts.
 
 ## Technologies Used
 
@@ -140,6 +143,7 @@ All Pages on the website have:
   - [Cloudinary](https://cloudinary.com/home-3722) was used to store images. 
   - [Heroku](https://heroku.com/) was used for deployment and hosting environment. 
   - [Favicon](https://favicon.io/) was used to create favicon.
+  - [Canva](https://www.canva.com/) was used to create free logo.
     
     
 ## Testing
@@ -181,8 +185,8 @@ All Pages on the website have:
 - 
 
 ### Content
-- https://nutriciously.com/how-to-eat-healthy-on-a-budget/
-- https://www.yourdailyvegan.com/environment/ 
+- https://theveganword.com/ site was used to add content to the blogpage.
+-  
     
 
 ## Acknowledgements
