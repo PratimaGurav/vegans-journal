@@ -75,9 +75,48 @@ I have used GitHub’s Kanban feature to handle the user stories.
   The website is comprised of:
 
   1. Home page.
-  ![Home screenshot]
-  2. NavBar
+  ![Home screenshot](documentation/readme/home.jpg)
+  2. Blog page.
+  ![Blogpage screenshot](documentation/readme/blog_page.jpg)
+  3. Blog-categories page.
+  ![Blog-categories screenshot](documentation/readme/blog_categories.jpg)
+  4. Blog categories dropdown.
+  ![Categories dropdown screenshot](documentation/readme/category_dropdown.jpg)
+  5. Categories list page.
+  ![Categories list screenshot](documentation/readme/category.jpg)
+  6. Add category page.
+  ![Add category screenshot](documentation/readme/add_category.jpg)
+  7. Add post page.
+  ![Add post screenshot](documentation/readme/add_post.jpg)
+  8. Add dropdown.
+  ![Add dropdown screenshot](documentation/readme/add_dropdown.jpg)
+  9. Comments.
+  ![Comments screenshot](documentation/readme/comments.jpg)
+  10. Up/downvote.
+  ![Upvote screenshot](documentation/readme/upvote.jpg)
+  
+  ![Downvote screenshot](documentation/readme/downvote.jpg)
+  11. Register page.
+  ![Register screenshot](documentation/readme/register.jpg)
+  12. Login page.
+  ![Login screenshot](documentation/readme/login.jpg)
+  13. Logout page.
+  ![Logout screenshot](documentation/readme/logout.jpg)
+  14. Search bar.
+  ![Search bar screenshot](documentation/readme/search_bar.jpg)
+  15. Search page.
+  ![Search page screenshot](documentation/readme/search_page.jpg)
      
+All Pages on the website have:
+
+* A favicon icon.
+    ![Favicon Icon](static/favicon/favicon-16x16.png)
+* A responsive navbar.
+    ![Navbar](documentation/readme/navbar.jpg)
+* A responsive footer.
+    ![Footer](documentation/readme/footer.jpg)
+
+
 
 ### Future Enhancements 
   - 
