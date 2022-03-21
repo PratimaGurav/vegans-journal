@@ -110,7 +110,7 @@ I have used GitHub’s Kanban feature to handle the user stories.
 All Pages on the website have:
 
 * A favicon icon.
-    ![Favicon Icon](static/favicon/favicon-16x16.png)
+    ![Favicon Icon](static/favicon/favicon-32x32.png)
 * A responsive navbar.
     ![Navbar](documentation/readme/navbar.jpg)
 * A responsive footer.
