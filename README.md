@@ -66,6 +66,13 @@ I have used GitHub’s Kanban feature to handle the user stories.
 
   - #### Typography
     Raleway italic font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat italic is used for headings with Sans Serif as the fallback.  
+
+  - #### Wireframes
+    Balsamiq was used to create wireframes for mobile, tablet/ipad and desktop.
+    
+    [Desktop](documentation/wireframes/desktop.pdf) |
+    [Tablet](documentation/wireframes/ipad.pdf) |
+    [Mobile](documentation/wireframes/mobile.pdf) |
    
     
 ## Features
