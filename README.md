@@ -172,7 +172,27 @@ All Pages on the website have:
 
 ## Deployment
 
-### GitHub Pages
+### Using Heroku
+- Development Enviroment
+  1.  Create env.py it needs to contain these 3 variables.
+    - [Cloudinary](https://cloudinary.com/)
+    - Secret key is the password of your choice.
+    - [Heroku](https://id.heroku.com/) postgreSQL.
+    ![env file](documentation/readme/env.jpg)
+  2. Create requirements.txt file.
+  3. Create Procfile containing application name to ensure proper formatting to avoid the deployment to fail.
+  4. Commit and push deployment changes to Github.
+  5. Create an account and login to Heroku
+    - Create a new app, with an appropriate app name and choose a region.
+    ![Create App](documentation/readme/heroku-create-app.jpg)
+    - In Resources add Heroku Postgres.
+    ![Resources](documentation/readme/heroku-resources.jpg)
+    - Within your newly created app go to settings go to Config Vars use the DATABASE_URL Value and add it to your env.py file also you need to connect it via settings.py.
+    ![Config Vars](documentation/readme/heroku-configvars.jpg)
+    - Create a SECRET_KEY Key and the Value as the desired key.
+    - Then go to the Deploy tab next to Deployment Method, click GitHub to connect your account and repository.
+    - At the bottom of the page hit deploy branch making sure it is set to main.
+
  
 
 ### Making a Local Clone
