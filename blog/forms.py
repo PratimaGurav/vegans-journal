@@ -24,12 +24,12 @@ class AddPostForm(forms.ModelForm):
         model = Post
         fields = ('title', 'category', 'blog_snippet', 'content', 'featured_image')
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control','placeholder':'Choose a blog title!'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
-            'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
+            'title': forms.TextInput(attrs={'class': 'form-control',
+                                            'placeholder':
+                                            'Choose a blog title!'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
+            'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
-
 
 class EditPostForm(forms.ModelForm):
     """

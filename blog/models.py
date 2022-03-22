@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.urls import reverse
-from ckeditor.fields import RichTextField
+# from ckeditor.fields import RichTextField
 
 
 
@@ -34,7 +34,7 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     blog_snippet = models.CharField(max_length=200)
-    content = RichTextField(blank=True, null=True)
+    content = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
