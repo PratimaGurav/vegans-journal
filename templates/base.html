@@ -86,7 +86,6 @@
                         </ul>
                     </li>                            
                     {% else %}
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           My Account
@@ -100,12 +99,6 @@
                             </li>
                         </ul>
                     </li>  
-                    <!-- <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'account_login' %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
-                    </li> -->
                     {% endif %}
                 </ul>
                 {% if user.is_authenticated %}
