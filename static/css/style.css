@@ -226,3 +226,15 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 500px) {
+
+    #id_content {
+        width: 320px !important;
+    }
+
+    .masthead {
+        height: auto !important;
+    }
+ 
+}
