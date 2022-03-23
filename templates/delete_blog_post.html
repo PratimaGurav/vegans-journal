@@ -4,12 +4,12 @@
 {% if user.is_authenticated %}
 {% if user.id == post.author.id %}
 <br/>
-<h1>Delete this post?
+<h1 class="text-center">Delete this post?
 </h1>
 <br/>
-<h3>Delete: {{ post.title }}
+<h3 class="text-center">Delete: {{ post.title }}
 </h3>
-<div class="mb-3">
+<div class="mb-3 text-center">
   <form method="POST">
     {% csrf_token %}
     <br/>
