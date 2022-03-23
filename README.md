@@ -30,33 +30,32 @@
 
 ### Introduction
 
-Vegan's Journal is a full-stack application using mainly the Django full-stack web framework. The purpose of the site is to allow users to connect, spread and share ideas or knowledge about Vegan. 
+Vegan's Journal is a full-stack application using mainly the Django full-stack web framework. The purpose of the site is to allow users to connect, spread and share ideas or knowledge about Vegan. Provides a login mechanism where users can login create a category and post. 
 
      
 ### Audience
 The site is targetted to people who wants to know about Vegan and / or trying to be vegan.    
 
 ### User stories
-I have used GitHub’s Kanban feature to handle the user stories. 
+GitHub’s Kanban feature was used to track the progress of user stories. 
 
   #### Site User
    1. I want to view a list of posts so that I can select one to read.
    2. I want to search a blog post(using relevant word) and ability to click on a post to read the full article / text.
-   3. I want to view the number of likes on each post so that I can see which is the most popular or viral.
+   3. I want to view the number of likes on each post so that I can see which is the most popular.
    4. I want to view comments on an individual post so that I can read the conversation.
    5. I want to register an account so that I can comment and like.
    6. I want to create, edit and delete my post.
    7. I want to create a category of my own to add content on the site. 
    8. I want to leave comments on a post so that I can be involved in the conversation/s.
    9. I want to like or unlike a post so that I can interact with the content.
-   10. I want to create draft posts so that I can finish writing the content later.
+  
 
   #### Site Admin
    1. I want to create, read, update and delete posts so that I can manage the blog content.
    2. I can approve or disapprove comments so that I can filter out objectionable comments.
    3. I want to view the number of likes on each post so that I can see which is the most popular or viral.
    4. I want to view comments on an individual post so that I can read the conversation.
-   5. I want to create draft posts so that I can finish writing the content later.
 
     
 ### Design

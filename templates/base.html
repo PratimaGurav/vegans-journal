@@ -90,7 +90,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           My Account
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMyAccount">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAccount">
                             <li class="nav-item">
                                 <a class="dropdown-item {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
                             </li>
