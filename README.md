@@ -159,6 +159,9 @@ All Pages on the website have:
    
 
 ### Validation
+
+![W3C Markup Validator](https://validator.w3.org/nu/)was used to validate every HTML page of the project to ensure there are no syntax errors. 
+Results of the same can be found ![Here](documentation/testing/html)
  
 
 
