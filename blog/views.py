@@ -13,7 +13,7 @@ class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
-    paginate_by = 6
+    paginate_by = 3
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
