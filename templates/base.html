@@ -76,7 +76,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Add
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdd">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="nav-item">
                                  <a class="dropdown-item" href="{% url 'add_post' %}"> New Post</a>
                             </li>
@@ -104,10 +104,10 @@
                 {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ user.username|title }}
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownUser">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
                             </li>
                         </ul>
