@@ -31,7 +31,7 @@ class AddPostForm(forms.ModelForm):
             'category': forms.Select(choices=choice_list, attrs={'class':
                                                                  'form-control'
                                                                  }),
-            'body': forms.Textarea(attrs={'class': 'form-control'}),
+            'body': forms.Textarea(attrs={'class': "form-control", 'rows': '3'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
 
