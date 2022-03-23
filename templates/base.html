@@ -98,7 +98,7 @@
                                 <a class="dropdown-item {% if request.resolver_match.url_name == 'account_login' %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
                             </li>
                         </ul>
-                    </li>  
+                    </li>
                     {% endif %}
                 </ul>
                 {% if user.is_authenticated %}
@@ -113,6 +113,19 @@
                         </ul>
                     </li>
                 </ul>
+                {% else %}
+
+                <div class="message-container">
+                    <input type="radio" name="flyer" id="hide">
+                    <div class="box">
+                        <label for="hide"><i class="fas fa-times"></i></label>
+                        <div class="right">
+                            <div class="text-1 text-center">Please Login</div>
+                            <div class="text-2 text-center">To Like, Comment & Add New Post or Category.</div>
+                        </div>
+                    </div>
+                </div>
+
                 {% endif %}
                 <!-- Search bar -->
                 <form class="d-flex" method="POST" action="{% url 'search_blog' %}">
@@ -125,6 +138,30 @@
             </div>
         </div>
     </nav>
+    
+    <!-- {% if user.is_authenticated %}
+    <div class="message-container">
+        <input type="radio" name="flyer" id="hide">
+        <div class="box">
+            <label for="hide"><i class="fas fa-times"></i></label>
+            <div class="right">
+                <div class="text-1">Thank You!</div>
+                <div class="text-2">You can now Like, Comment and Add New Post.</div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="message-container">
+        <input type="radio" name="flyer" id="hide">
+        <div class="box">
+            <label for="hide"><i class="fas fa-times"></i></label>
+            <div class="right">
+                <div class="text-1">Please Login</div>
+                <div class="text-2">To Like, Comment and Add New Post.</div>
+            </div>
+        </div>
+    </div>
+    {% endif %} -->
 
     <div class="container">
         <div class="row">
