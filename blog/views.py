@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import (ListView, DetailView, CreateView,  
+from django.views.generic import (ListView, DetailView, CreateView,
                                   UpdateView, DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy, reverse
@@ -75,15 +75,16 @@ class PostDetail(DetailView):
             },
         )
 
+
 def like_view(request, slug):
         post = get_object_or_404(Post, slug=slug)
-        
+
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug])) 
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 class AddPostView(LoginRequiredMixin, CreateView):
@@ -109,13 +110,18 @@ class AddCategoryView(LoginRequiredMixin, CreateView):
 
 
 def CategoryView(request, cats):
-    category_posts = Post.objects.filter(status=1, category=cats.title().replace('-', ' '))
-    return render(request, 'categories.html', {'cats':cats.title().replace('-', ' '), 'category_posts':category_posts})
+    category_posts = Post.objects.filter(status=1, category=cats.title().
+                                         replace('-', ' '))
+    return render(request, 'categories.html', {'cats': cats.title().
+                                               replace('-', ' '),
+                                               'category_posts':
+                                               category_posts})
 
 
 def CategoryListView(request):
     cat_menu_list = Category.objects.all()
-    return render(request, 'category_list.html', {'cat_menu_list':cat_menu_list})
+    return render(request, 'category_list.html', {'cat_menu_list':
+                                                  cat_menu_list})
 
 
 def results_view(request):
@@ -129,7 +135,6 @@ def results_view(request):
                       {'searched': searched, 'posts': posts})
     else:
         return render(request, 'search_blog.html', {})
-
 
 
 class EditPostView(UpdateView):
