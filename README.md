@@ -151,6 +151,7 @@ All Pages on the website have:
   - [Heroku](https://heroku.com/) was used for deployment and hosting environment. 
   - [Favicon](https://favicon.io/) was used to create favicon.
   - [Canva](https://www.canva.com/) was used to create free logo.
+  - [TinyPNG](https://tinypng.com/) was used to compress images.
     
     
 ## Testing
