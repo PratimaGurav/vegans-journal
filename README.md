@@ -172,7 +172,29 @@ All Pages on the website have:
 
 ### Further Testing
 
- - 
+ - User trying to register with no details provided.
+ ![Register Blank](documentation/testing/manual/registerblank.jpg)
+
+ - User trying to register with the username which already exists.
+ ![Register Duplicate](documentation/testing/manual/register-duplicate.jpg)
+
+ - User trying to register using password which does not meet standard password requirement guidelines.
+ ![Register Wrong Password](documentation/testing/manual/register_error.jpg)
+
+ - User trying to login with no details provided.
+ ![Login blank](documentation/testing/manual/loginblank.jpg)
+
+ - User trying to login with incorrect password.
+ ![Wrong password](documentation/testing/manual/login_error.jpg)
+
+ - User trying to submit a post without blog snippet.
+ ![Blank blog snippet](documentation/testing/manual/post-blank.jpg)
+
+ - User trying to submit a blank comment.
+ ![Blank comment](documentation/testing/manual/comment-blank.jpg)
+
+ - User gets prompted before deleting their post in order to avoid accidentally deleting their posts. 
+ ![Delete post](documentation/testing/manual/deletepost.jpg)
 
   - ### Known Bugs
 
