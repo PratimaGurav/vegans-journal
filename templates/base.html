@@ -76,7 +76,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Add
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdd">
                             <li class="nav-item">
                                  <a class="dropdown-item" href="{% url 'add_post' %}"> New Post</a>
                             </li>
@@ -90,7 +90,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           My Account
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMyAccount">
                             <li class="nav-item">
                                 <a class="dropdown-item {% if request.resolver_match.url_name == 'account_signup' %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
                             </li>
@@ -107,7 +107,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ user.username|title }}
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownUser">
                             <li><a class="dropdown-item {% if request.resolver_match.url_name == 'account_logout' %} active {% endif %} " href="{% url 'account_logout' %}">Logout</a>
                             </li>
                         </ul>
