@@ -156,6 +156,16 @@ All Pages on the website have:
 ## Testing
 
 ### Bugs
+- Disorted form (add post page)
+  - [Error](documentation/testing/bugs/add_post.png) no styling for the comments section.
+    Used ckeditor to style the content section but the same was not displayed in the live site with a 404 [Error](documentation/testing/bugs/ckeditor-error.jpg). 
+  - [Solution](documentation/testing/bugs/add-post-fix.jpg)Checked with Mentor who told me to check with the tutor team who advised me to rescope the same. Used css styling to style the content form on all devices.
+
+
+- NoReverseMatch 
+  - [Error](documentation/testing/bugs/no-reverse-path.png) No Reverse match found while adding a post to the site.
+    There was no slug to the modal, when it was saved, the same slug(an empty string) was used over and over again.
+  - [Solution](documentation/testing/bugs/sumbit_post_fix.png) Took the title of the post, and used that as the slug, that what is the save method if the modal is doing, the second error was deleting posts that had no slug to tidy up. 
    
 
 ### Validation
@@ -198,7 +208,6 @@ All Pages on the website have:
 
   - ### Known Bugs
 
-    - 
 
 ## Deployment
 
