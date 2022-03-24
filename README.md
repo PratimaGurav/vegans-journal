@@ -255,7 +255,7 @@ All Pages on the website have:
 ### Code
 - Django walkthrough project in the Full Stack Toolkit was referred for designing and technical implementation.
 - [Codemy.com](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) was used as an inspiration and referred to understand Python and Django better.
-- [Stack Overflow](https://stackoverflow.com/)was referred for resloution of technical queries.
+- [Stack Overflow](https://stackoverflow.com/) was referred for resloution of technical queries.
 
 
 ## Acknowledgements
