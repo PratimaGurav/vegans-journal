@@ -211,7 +211,7 @@ All Pages on the website have:
  - User gets prompted before deleting their post in order to avoid accidentally deleting their posts. 
  ![Delete post](documentation/testing/manual/deletepost.jpg)
 
-  - ### Known Bugs
+### Known Bugs
   - Register form is distorted.
   - On Tablet screen only, the like icon and number of likes is distorted.
 
