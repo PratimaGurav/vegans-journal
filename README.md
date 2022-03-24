@@ -4,26 +4,36 @@
 
 ### Full-Stack Toolkit site.
 
-![Responsive]
+![Responsive](documentation/readme/responsive.jpg)
 
-[Click here to view the live project.]
+[Click here to view the live project.](https://vegansjournal.herokuapp.com/)
 
-[Click here to view the repository.]
+[Click here to view the repository.](https://github.com/PratimaGurav/vegans-journal)
 
 ## Table of Contents:
-- [User Experience (UX)]  
+- [User Experience (UX)](https://github.com/PratimaGurav/vegans-journal#user-experience-ux)
+  - [Introduction](https://github.com/PratimaGurav/vegans-journal#introduction)
+  - [Audience](https://github.com/PratimaGurav/vegans-journal#audience)
+  - [User Stories](https://github.com/PratimaGurav/vegans-journal#user-stories)
+  - [Design](https://github.com/PratimaGurav/vegans-journal#design)  
 
-- [Features]
+- [Features](https://github.com/PratimaGurav/vegans-journal#features)
+  - [Future Enhancements](https://github.com/PratimaGurav/vegans-journal#future-enhancements)
 
-- [Technologies Used]
+- [Technologies Used](https://github.com/PratimaGurav/vegans-journal#technologies-used)
   
-- [Testing]
+- [Testing](https://github.com/PratimaGurav/vegans-journal#testing)
+  - [Bugs](https://github.com/PratimaGurav/vegans-journal#bugs)
+  - [Validation](https://github.com/PratimaGurav/vegans-journal#validation)
+  - [Further Testing](https://github.com/PratimaGurav/vegans-journal#further-testing)
 
-- [Deployment]
+- [Deployment](https://github.com/PratimaGurav/vegans-journal#deployment)
+  - [Using Heroku](https://github.com/PratimaGurav/vegans-journal#using-heroku)
+  - [Making a Clone](https://github.com/PratimaGurav/vegans-journal#making-a-local-clone)
 
-- [Credits]
+- [Credits](https://github.com/PratimaGurav/vegans-journal#credits)
 
-- [Acknowledgements]
+- [Acknowledgements](https://github.com/PratimaGurav/vegans-journal#acknowledgements)
     
 
 ## User Experience (UX)
