@@ -12,25 +12,15 @@
 
 ## Table of Contents:
 - [User Experience (UX)](https://github.com/PratimaGurav/vegans-journal#user-experience-ux)
-  - [Introduction](https://github.com/PratimaGurav/vegans-journal#introduction)
-  - [Audience](https://github.com/PratimaGurav/vegans-journal#audience)
-  - [User Stories](https://github.com/PratimaGurav/vegans-journal#user-stories)
-  - [Design](https://github.com/PratimaGurav/vegans-journal#design)  
 
 - [Features](https://github.com/PratimaGurav/vegans-journal#features)
-  - [Future Enhancements](https://github.com/PratimaGurav/vegans-journal#future-enhancements)
-
+  
 - [Technologies Used](https://github.com/PratimaGurav/vegans-journal#technologies-used)
   
 - [Testing](https://github.com/PratimaGurav/vegans-journal#testing)
-  - [Bugs](https://github.com/PratimaGurav/vegans-journal#bugs)
-  - [Validation](https://github.com/PratimaGurav/vegans-journal#validation)
-  - [Further Testing](https://github.com/PratimaGurav/vegans-journal#further-testing)
-
+  
 - [Deployment](https://github.com/PratimaGurav/vegans-journal#deployment)
-  - [Using Heroku](https://github.com/PratimaGurav/vegans-journal#using-heroku)
-  - [Making a Clone](https://github.com/PratimaGurav/vegans-journal#making-a-local-clone)
-
+ 
 - [Credits](https://github.com/PratimaGurav/vegans-journal#credits)
 
 - [Acknowledgements](https://github.com/PratimaGurav/vegans-journal#acknowledgements)
@@ -40,41 +30,42 @@
 
 ### Introduction
 
-Vegan's Journal is a full-stack application biult using mainly the Django full-stack web framework. The purpose of the site is to create a comunity allowing users to connect and spread knowledge about Vegan. All visitors can read the blogs posted on the site by different users. The application provides a login mechanism where users can register themselves. Logged in users can like, comment and add new post or category of their choice. Comments would be approved by site admin to objectional content being posted. Additionally it allows users to edit and delete their own post.
+Vegan's Journal is a full-stack application biult using mainly the Django full-stack web framework. The purpose of the site is to create a community allowing users to connect and spread knowledge about Vegan. All visitors can read the blogs posted on the site by different users. The application provides a login mechanism where users can register themselves. Logged in users can like, comment and add new post or category of their choice. Comments would be approved by site admin to avoid objectional content being posted. Additionally it allows users to edit and delete their own post.
 
      
 ### Audience
-The site is targetted to all people of all age groups who aspire to be vegan and willing to know more about veganism.    
+The site is targetted to people of all age groups who aspire to be vegan and willing to know more about veganism.    
 
 ### User stories
-- Agile methodologies was used to create user stories. 
+- Agile methodology was used to create user stories. 
 - GitHub’s Kanban feature was used to track the progress of user stories. 
 
   #### Site User
-   1. I want to like to easily understand the different navigation options offered by the site.
+   1. I want to easily understand the different navigation options offered by the site.
    2. I want to view a list of posts so that I can select one to read.
    3. I want to search a blog post (using relevant word) and ability to click on a post to read the full post.
    4. I want to know the author of one particular post and the date and time the post was created.
    5. I want to view the number of likes on each post so that I can see which is the most popular.
    6. I want to view comments on an individual post so that I can read the conversation.
    7. I want to register and create an account so that I can like existing post(s).
-   8. I want to leave comments on a post so that I can be involved in the conversation(s).
-   9. I want to create, edit and delete my post.
-   10. I want to create a category of my own to add my own post on the site.
-   11. I want to like or unlike a post so that I can interact with the content.
+   8. I want to like or unlike a post so that I can interact with the content.
+   9. I want to leave comments on a post so that I can be involved in the conversation(s).
+   10. I want to create, edit and delete my post.
+   11. I want to create a category of my own to add my own post on the site.
+   12. I want to like or unlike a post so that I can interact with the content.
   
 
   #### Site Admin
    1. I want to create, read, update and delete posts so that I can manage the blog content.
    2. I can approve or disapprove comments so that I can filter out objectionable comments.
-   3. I want to view the number of likes on each post so that I can see which is the most popular or viral.
+   3. I want to view the number of likes on each post so that I can see which is the most popular.
    4. I want to view comments on an individual post so that I can read the conversation.
 
     
 ### Design
 
   - #### Color Scheme
-    As the theme of the site is all about vegan, the color used are the classic vegetable colours. These rest of the colours complement each other and maintain good contrast levels.
+    As the theme of the site is all about vegan, the color used are the classic vegetable colours. The rest of the colours complement each other and maintain good contrast levels.
     ![Color Palette](documentation/readme/site-palette.png)
 
   - #### Typography
@@ -109,7 +100,7 @@ The site is targetted to all people of all age groups who aspire to be vegan and
   7. Add post page.
   ![Add post screenshot](documentation/readme/add_post.jpg)
   8. Add dropdown.
-  ![Add dropdown screenshot](documentation/readme/add_dropdown.jpg)
+  ![Add dropdown screenshot](documentation/readme/add_post_dropdown.jpg)
   9. Comments.
   ![Comments screenshot](documentation/readme/comments.jpg)
   10. Upvote.
@@ -140,12 +131,10 @@ All Pages on the website have:
 
 
 ### Future Enhancements 
-  - Add function to create a user profile and edit / update profile setting with an option to add first_name, last_name, last_logged_in.
-  - Implement a function to bookmark a page.
-  - Add more messages for users that is while logging out, adding posts.
+  - Add feature to create a user profile and edit / update profile setting with an option to add user details like first name, last name, last logged in.
+  - Add feature to bookmark post(s) and option for particular user to view his/her own post(s).
   - Add subscribe page for users to receive weekly updates.
-  - Function to view most popular blog posts.
-
+ 
 ## Technologies Used
 
 ### Languages, Frameworks, Libraries & Programs Used
@@ -175,13 +164,13 @@ All Pages on the website have:
 - Disorted form (add post page)
   - [Error](documentation/testing/bugs/add_post.png) no styling for the comments section.
     Used ckeditor to style the content section but the same was not displayed in the live site with a 404 [Error](documentation/testing/bugs/ckeditor-error.jpg). 
-  - [Solution](documentation/testing/bugs/add-post-fix.jpg) Checked with Mentor who told me to check with the tutor team who advised me to rescope the same. Used css styling to style the content form on all devices.
+  - [Solution](documentation/testing/bugs/add-post-fix.jpg) The ckeditor was rescoped and used css styling to style the content form on all devices.
 
 
 - NoReverseMatch 
   - [Error](documentation/testing/bugs/no-reverse-path.png) No Reverse match found while adding a post to the site.
-    There was no slug to the modal, when it was saved, the same slug(an empty string) was used over and over again.
-  - [Solution](documentation/testing/bugs/sumbit_post_fix.png) Took the title of the post, and used that as the slug, that what is the save method if the modal is doing, the second error was deleting posts that had no slug to tidy up. 
+    There was no slug to the model, when it was saved, the same slug (an empty string) was used over and over again.
+  - [Solution](documentation/testing/bugs/sumbit_post_fix.png) Took the title of the post, and used that as the slug, that what is the save method if the model is doing, the second error was deleting posts that had no slug to tidy up. 
    
 
 ### Validation
@@ -201,7 +190,7 @@ All Pages on the website have:
  - User trying to register with no details provided.
  ![Register Blank](documentation/testing/manual/registerblank.jpg)
 
- - User trying to register with the username which already exists.
+ - User trying to register with the username which already exists and password mismatch.
  ![Register Duplicate](documentation/testing/manual/register-duplicate.jpg)
 
  - User trying to register using password which does not meet standard password requirement guidelines.
@@ -223,13 +212,14 @@ All Pages on the website have:
  ![Delete post](documentation/testing/manual/deletepost.jpg)
 
   - ### Known Bugs
-
+  - Register form is distorted.
+  - On Tablet screen only, the like icon and number of likes is distorted.
 
 ## Deployment
 
 ### Using Heroku
 - Development Enviroment
-  1.  Create env.py it needs to contain these 3 variables.
+  1.  Create env.py : It needs to contain these 3 variables.
     - [Cloudinary](https://cloudinary.com/)
     - Secret key is the password of your choice.
     - [Heroku](https://id.heroku.com/) postgreSQL.
@@ -264,14 +254,9 @@ All Pages on the website have:
 
 ### Code
 - Django walkthrough project in the Full Stack Toolkit was referred for designing and technical implementation.
-- ![Codemy.com](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) was used as an inspiration and referred to understand Python and Django better.
-- ![Stack Overflow](https://stackoverflow.com/)was refered for resloution of technical querries.
+- [Codemy.com](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) was used as an inspiration and referred to understand Python and Django better.
+- [Stack Overflow](https://stackoverflow.com/)was referred for resloution of technical queries.
 
-
-### Content
-- https://theveganword.com/ and https://theminimalistvegan.com/ sites were used to add content to the blogpage.
--  
-    
 
 ## Acknowledgements
 
