@@ -30,25 +30,27 @@
 
 ### Introduction
 
-Vegan's Journal is a full-stack application using mainly the Django full-stack web framework. The purpose of the site is to allow users to connect, spread and share ideas or knowledge about Vegan. Provides a login mechanism where users can login create a category and post. 
+Vegan's Journal is a full-stack application biult using mainly the Django full-stack web framework. The purpose of the site is to create a comunity allowing users to connect and spread knowledge about Vegan. All visitors can read the blogs posted on the site by different users. The application provides a login mechanism where users can register themselves. Logged in users can like, comment and add new post or category of their choice. Comments would be approved by site admin to objectional content being posted. Additionally it allows users to edit and delete their own post.
 
      
 ### Audience
-The site is targetted to people who wants to know about Vegan and / or trying to be vegan.    
+The site is targetted to all people of all age groups who aspire to be vegan and willing to know more about veganism.    
 
 ### User stories
 GitHub’s Kanban feature was used to track the progress of user stories. 
 
   #### Site User
-   1. I want to view a list of posts so that I can select one to read.
-   2. I want to search a blog post(using relevant word) and ability to click on a post to read the full article / text.
-   3. I want to view the number of likes on each post so that I can see which is the most popular.
-   4. I want to view comments on an individual post so that I can read the conversation.
-   5. I want to register an account so that I can comment and like.
-   6. I want to create, edit and delete my post.
-   7. I want to create a category of my own to add content on the site. 
-   8. I want to leave comments on a post so that I can be involved in the conversation/s.
-   9. I want to like or unlike a post so that I can interact with the content.
+   1. I want to like to easily understand the different navigation options offered by the site.
+   2. I want to view a list of posts so that I can select one to read.
+   3. I want to search a blog post (using relevant word) and ability to click on a post to read the full post.
+   4. I want to know the author of one particular post and the date and time the post was created.
+   5. I want to view the number of likes on each post so that I can see which is the most popular.
+   6. I want to view comments on an individual post so that I can read the conversation.
+   7. I want to register and create an account so that I can like existing post(s).
+   8. I want to leave comments on a post so that I can be involved in the conversation(s).
+   9. I want to create, edit and delete my post.
+   10. I want to create a category of my own to add my own post on the site.
+   11. I want to like or unlike a post so that I can interact with the content.
   
 
   #### Site Admin
@@ -61,7 +63,8 @@ GitHub’s Kanban feature was used to track the progress of user stories.
 ### Design
 
   - #### Color Scheme
-    The main colours used for the site are Dollar Bill Green(#8CB567), La Salle Green (#08823F), Seashell (#EFF0F2), Golden Bell (#E28C1B), white (#FFFFFF) and black (#000000). These colours complement eachother and maintain good contrast levels.
+    As the theme of the site is all about vegan, the color used are the classic vegetable colours. These rest of the colours complement each other and maintain good contrast levels.
+    [Color Palette](documentation/readme/site-palette.png)
 
   - #### Typography
     Raleway italic font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat italic is used for headings with Sans Serif as the fallback.  
