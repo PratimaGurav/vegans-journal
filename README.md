@@ -75,7 +75,7 @@ The site is targetted to all people of all age groups who aspire to be vegan and
 
   - #### Color Scheme
     As the theme of the site is all about vegan, the color used are the classic vegetable colours. These rest of the colours complement each other and maintain good contrast levels.
-    [Color Palette](documentation/readme/site-palette.png)
+    ![Color Palette](documentation/readme/site-palette.png)
 
   - #### Typography
     Raleway italic font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat italic is used for headings with Sans Serif as the fallback.  
@@ -175,7 +175,7 @@ All Pages on the website have:
 - Disorted form (add post page)
   - [Error](documentation/testing/bugs/add_post.png) no styling for the comments section.
     Used ckeditor to style the content section but the same was not displayed in the live site with a 404 [Error](documentation/testing/bugs/ckeditor-error.jpg). 
-  - [Solution](documentation/testing/bugs/add-post-fix.jpg)Checked with Mentor who told me to check with the tutor team who advised me to rescope the same. Used css styling to style the content form on all devices.
+  - [Solution](documentation/testing/bugs/add-post-fix.jpg) Checked with Mentor who told me to check with the tutor team who advised me to rescope the same. Used css styling to style the content form on all devices.
 
 
 - NoReverseMatch 
@@ -186,13 +186,13 @@ All Pages on the website have:
 
 ### Validation
 
-- [W3C Markup Validator](https://validator.w3.org/nu/)was used to validate every HTML page of the project to ensure there are no  syntax errors. 
+- [W3C Markup Validator](https://validator.w3.org/nu/) was used to validate every HTML page of the project to ensure there are no  syntax errors. 
   Results of the same can be found [Here](documentation/testing/html)
 
-- [PEP8](http://pep8online.com/)was used to validate python code.
+- [PEP8](http://pep8online.com/) was used to validate python code.
  Results of the same can be found [Here](documentation/testing/pep8)
 
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)was used to validate CSS.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate CSS.
   Results of the same can be found [Here](documentation/testing/css)
 
 
