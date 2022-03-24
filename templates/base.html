@@ -115,8 +115,8 @@
                 </ul>
                 {% else %}
                 <!--Message flyer-->
-                <div class="message-container">
-                    <input type="radio" name="flyer" id="hide">
+                <div id="flyer" class="message-container">
+                    <input onclick="myFunction()" type="radio" name="flyer" id="hide">
                     <div class="box">
                         <label for="hide"><i class="fas fa-times"></i></label>
                         <div class="right">
@@ -180,11 +180,23 @@
         </p>
     </footer>
     <script>
+        // Function to display and hide alert messages.
         setTimeout(function () {
             let messages = document.getElementById('msg');
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 2500);
+
+        // Function to display and hide message flyer.
+        // Referred w3schools.com for the below js.
+        function myFunction() {
+            var x = document.getElementById('flyer');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 </body>
 

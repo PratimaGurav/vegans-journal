@@ -47,7 +47,8 @@ Vegan's Journal is a full-stack application biult using mainly the Django full-s
 The site is targetted to all people of all age groups who aspire to be vegan and willing to know more about veganism.    
 
 ### User stories
-GitHub’s Kanban feature was used to track the progress of user stories. 
+- Agile methodologies was used to create user stories. 
+- GitHub’s Kanban feature was used to track the progress of user stories. 
 
   #### Site User
    1. I want to like to easily understand the different navigation options offered by the site.
@@ -262,11 +263,13 @@ All Pages on the website have:
 ## Credits
 
 ### Code
-- 
-- 
+- Django walkthrough project in the Full Stack Toolkit was referred for designing and technical implementation.
+- ![Codemy.com](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) was used as an inspiration and referred to understand Python and Django better.
+- ![Stack Overflow](https://stackoverflow.com/)was refered for resloution of technical querries.
+
 
 ### Content
-- https://theveganword.com/ site was used to add content to the blogpage.
+- https://theveganword.com/ and https://theminimalistvegan.com/ sites were used to add content to the blogpage.
 -  
     
 

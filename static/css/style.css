@@ -237,9 +237,9 @@ footer {
     padding: 15px 25px 15px 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    animation: show_box 0.8s ease forwards;
+    /* animation: show_box 0.8s ease forwards; */
 }
-
+/* 
 @keyframes show_box {
     0%{
       transform: translateX(100%);
@@ -257,8 +257,8 @@ footer {
   
 #hide:checked ~ .box{
     animation: hide_box 0.8s ease forwards;
-}
-  
+} */
+/*   
 @keyframes hide_box {
     0%{
       transform: translateX(0%);
@@ -272,7 +272,7 @@ footer {
     100%{
       transform: translateX(calc(100% + 35px ));
     }
-}
+} */
 
 .message-container .box i{
     position: absolute;
@@ -280,7 +280,7 @@ footer {
     top: 10px;
     color: var(--content-border);
     cursor: pointer;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
   
 .message-container i:hover{
