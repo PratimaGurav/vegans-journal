@@ -125,6 +125,8 @@ GitHub’s Kanban feature was used to track the progress of user stories.
   ![Search bar screenshot](documentation/readme/search_bar.jpg)
   15. Search page.
   ![Search page screenshot](documentation/readme/search_page.jpg)
+  16. Message flyer.
+  ![Message flyer screenshot](documentation/readme/message-flyer.jpg)
      
 All Pages on the website have:
 
