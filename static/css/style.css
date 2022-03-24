@@ -225,7 +225,7 @@ footer {
 .message-container{
     position: absolute;
     right: 30px;
-    top: 50px;
+    bottom: 150px;
     padding-top: 5%;
 }
 
