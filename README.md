@@ -270,8 +270,8 @@ All Pages on the website have:
 
 ## Acknowledgements
 
-  -   My Mentor for continuous helpful feedback and advises.
-  -   All the tutors Sean for helping me understand and fix few bugs.
+  -   My Mentor for guidance.
+  -   All the tutors, especially Sean for helping me understand and fix few bugs.
 
 
-## [BACK TO TOP]
+## [BACK TO TOP](https://github.com/PratimaGurav/vegans-journal#vegans-journal-blog)
