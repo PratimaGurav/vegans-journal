@@ -113,6 +113,23 @@
                         </ul>
                     </li>
                 </ul>
+                {% else %}
+                <!--Message flyer-->
+                <div class="message-container">
+                    <input type="radio" name="flyer" id="hide">
+                    <div class="box">
+                        <label for="hide"><i class="fas fa-times"></i></label>
+                        <div class="right">
+                            <div class="text-1 text-center">Please Login 
+                                to Like,
+                                <br>
+                                Comment and Add
+                                <br>
+                                New Post or Category.
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {% endif %}
 
                 <!-- Search bar -->
@@ -127,40 +144,6 @@
         </div>
     </nav>
     
-    <!--Message flyer-->
-    {% if user.is_authenticated %}
-    <div class="message-container">
-        <input type="radio" name="flyer" id="hide">
-        <div class="box">
-            <label for="hide"><i class="fas fa-times"></i></label>
-            <div class="right">
-                <div class="text-1 text-center">Thank You!
-                    You can now
-                    <br> 
-                    Like, Comment and Add
-                    <br>
-                    New Post or Category.
-                </div>
-            </div>
-        </div>
-    </div>
-    {% else %}
-    <div class="message-container">
-        <input type="radio" name="flyer" id="hide">
-        <div class="box">
-            <label for="hide"><i class="fas fa-times"></i></label>
-            <div class="right">
-                <div class="text-1 text-center">Please Login 
-                    to Like,
-                    <br>
-                    Comment and Add
-                    <br>
-                    New Post or Category.
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endif %}
 
     <div class="container">
         <div class="row">
