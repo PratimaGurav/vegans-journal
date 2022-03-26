@@ -197,6 +197,10 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
+#id_content {
+    width: 2300px !important;
+    border: 1px solid var(--content-border) !important;
+}
 
 /*---------- FOOTER ----------*/
 
@@ -215,11 +219,6 @@ footer {
   #footer-external-links> a:hover {
     color: var(--white-color);
 }  
-
-#id_content {
-     width: 2300px !important;
-     border: 1px solid var(--content-border) !important;
-}
 
 /*----Flyer Message----*/
 
