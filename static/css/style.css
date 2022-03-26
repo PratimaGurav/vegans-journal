@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------- BODY ----------*/
+.welcome-title {
+    margin-top: 3px;
+}
+
 .card {
     border: none 2px;
     background-color: var(--base-color);
@@ -214,6 +218,7 @@ footer {
   #footer-external-links> a {
     text-decoration: none;
     color: var(--grad1-color);
+    font-size: 1.5rem;
 }
   
   #footer-external-links> a:hover {
