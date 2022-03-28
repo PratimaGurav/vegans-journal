@@ -30,11 +30,11 @@
 
 ### Introduction
 
-Vegan's Journal is a full-stack application biult using mainly the Django full-stack web framework. The purpose of the site is to create a community allowing users to connect and spread knowledge about Vegan. All visitors can read the blogs posted on the site by different users. The application provides a login mechanism where users can register themselves. Logged in users can like, comment and add new post or category of their choice. Comments would be approved by site admin to avoid objectional content being posted. Additionally it allows users to edit and delete their own post.
+Vegan's Journal is a full-stack application built using mainly the Django full-stack web framework. The purpose of the site is to create a community allowing users to connect and spread knowledge about Vegan. All visitors can read the blogs posted on the site by different users. The application provides a login mechanism where users can register themselves. Logged in users can like, comment and add new post or category of their choice. Comments would be approved by site admin to avoid objectional content being posted. Additionally it allows users to edit and delete their own post.
 
      
 ### Audience
-The site is targetted to people of all age groups who aspire to be vegan and willing to know more about veganism.    
+The site is targetted to people of all age groups who aspire to be vegan and are willing to know more about veganism.    
 
 ### User stories
 - Agile methodology was used to create user stories. 
@@ -52,7 +52,6 @@ The site is targetted to people of all age groups who aspire to be vegan and wil
    9. I want to leave comments on a post so that I can be involved in the conversation(s).
    10. I want to create, edit and delete my post.
    11. I want to create a category of my own to add my own post on the site.
-   12. I want to like or unlike a post so that I can interact with the content.
   
 
   #### Site Admin
@@ -65,7 +64,7 @@ The site is targetted to people of all age groups who aspire to be vegan and wil
 ### Design
 
   - #### Color Scheme
-    As the theme of the site is all about vegan, the color used are the classic vegetable colours. The rest of the colours complement each other and maintain good contrast levels.
+    As the theme of the site is all about vegan, the colours used are the classic vegetable colours. The rest of the colours complement each other and maintain good contrast levels.
     ![Color Palette](documentation/readme/site-palette.png)
 
   - #### Typography
