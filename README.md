@@ -156,7 +156,11 @@ All Pages on the website have:
   - [Favicon](https://favicon.io/) was used to create favicon.
   - [Canva](https://www.canva.com/) was used to create free logo.
   - [TinyPNG](https://tinypng.com/) was used to compress images.
-    
+
+## Database Models
+![Class Category](documentation/readme/category_dm.jpg)
+![Class Post](documentation/readme/post_dm.png)
+![Class Comment](documentation/readme/comment_dm.jpg)
     
 ## Testing
 
