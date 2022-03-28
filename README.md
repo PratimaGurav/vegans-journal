@@ -175,7 +175,10 @@ All Pages on the website have:
   - [Error](documentation/testing/bugs/no-reverse-path.png) No Reverse match found while adding a post to the site.
     There was no slug to the model, when it was saved, the same slug (an empty string) was used over and over again.
   - [Solution](documentation/testing/bugs/sumbit_post_fix.png) Took the title of the post, and used that as the slug, that what is the save method if the model is doing, the second error was deleting posts that had no slug to tidy up. 
-   
+
+- Failed to load resources (css file) received 404 error
+  - [Error](documentation/testing/bugs/404.png) Unable to load CSS file and received 404 error.
+  - [Solution](documentation/testing/bugs/404-fix.png) Debug was set to automatic.
 
 ### Validation
 
